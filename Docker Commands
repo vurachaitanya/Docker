@@ -14,4 +14,15 @@ List of dockers running:
 
 Starting docker/whalesay docker with veriable "COWSAY" and "chaitu as key word"
       docker run docker/whalesay cowsay chaitanya
- 
+
+DOCKER File to automate installation :
+        Dockerfile
+    Key words for Dockers :
+    FROM docker/whalesay:latest ----> Image file and version.
+    RUN apt-get -y update && apt-get install -y apache2 ----------> install apache2
+
+
+EXAMPLE DOCKER FILE :
+        FROM docker/whalesay:latest
+        RUN apt-get -y update && apt-get install -y fortunes
+        CMD /usr/games/fortune -a | cowsay 
