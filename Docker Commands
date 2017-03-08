@@ -1,0 +1,17 @@
+Docker Commands :
+
+Start Docker name with the image name hello-world:
+    docker run hello-world 
+    
+Docker Version
+    docker version 
+
+List of dockers running:
+    docker ps
+    
+    docker ps -a    # show all containers on the system.
+
+
+Starting docker/whalesay docker with veriable "COWSAY" and "chaitu as key word"
+      docker run docker/whalesay cowsay chaitanya
+ 
