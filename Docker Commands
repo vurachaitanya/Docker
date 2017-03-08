@@ -36,6 +36,9 @@ Build the image using the docker build command. The -t parameter gives your imag
 List of Docker images in our OS:
         docker images
 
+Remove Docker from your local OS:
+        docker image rm
+        docker image rm -f 7d9495d03763
 
 Push you docker to DOCKER-HUB Portal to make it avaialbe to all:
         docker tag 7d9495d03763 vurachaitanya/docker-whale:latest
@@ -45,3 +48,11 @@ Push you docker to DOCKER-HUB Portal to make it avaialbe to all:
 
 PUSH to DOCKER-HUB:        
         docker push vurachaitanya/docker-whale
+        
+
+Docker Hub is so that you can access it from any Docker host using docker pull
+        docker pull
+ 
+ If not avaiable in local to run, it will pull from hub and get image to local to start:
+ docker run maryatdocker/docker-whale
+        
