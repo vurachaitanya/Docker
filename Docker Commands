@@ -35,3 +35,13 @@ Build the image using the docker build command. The -t parameter gives your imag
 
 List of Docker images in our OS:
         docker images
+
+
+Push you docker to DOCKER-HUB Portal to make it avaialbe to all:
+        docker tag 7d9495d03763 vurachaitanya/docker-whale:latest
+        
+ Docker-HUB Login space:
+        docker login
+
+PUSH to DOCKER-HUB:        
+        docker push vurachaitanya/docker-whale
