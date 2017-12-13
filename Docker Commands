@@ -56,3 +56,9 @@ Docker Hub is so that you can access it from any Docker host using docker pull
  If not avaiable in local to run, it will pull from hub and get image to local to start:
  docker run maryatdocker/docker-whale
         
+##########Cleanup exited processes:
+docker rm $(docker ps -q -f status=exited)
+##########Cleanup dangling volumes:
+docker volume rm $(docker volume ls -qf dangling=true)
+##########Cleanup dangling images:
+docker rmi $(docker images --filter "dangling=true" -q --no-trunc)
