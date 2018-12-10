@@ -1,0 +1,768 @@
+    1  ip
+    2  ip -a
+    3  ip a
+    4  poweroff
+    5  apt-get install     apt-transport-https     ca-certificates     curl     software-properties-common
+    6  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+    7  sudo apt-key fingerprint 0EBFCD88
+    8  apt-get remove docker docker-engine docker.io
+    9  apt-get update
+   10  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+   11  sudo apt-key fingerprint 0EBFCD88
+   12  lsb_release 
+   13  lsb_release -a
+   14  add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   15     $(lsb_release -cs) \
+   16     stable"
+   17  apt-get install docker-ce
+   18  apt-get install docker
+   19  apt-get remove docker docker-engine docker.io
+   20  apt-get install docker-ce
+   21  apt-cache madison docker-ce
+   22  apt-get install docker-ce=<VERSION>
+   23  apt-get install docker-ce18.03.0~ce-0~ubuntu
+   24  apt-get install docker-ce*
+   25  poweroff
+   26  clear
+   27  apt install docker.io
+   28  systemctl start docker
+   29  systemctl enable docker
+   30  docker --version
+   31  docker ps
+   32  docker images
+   33  ifconfig -a
+   34  ifconfig -a|grep inets
+   35  ifconfig -a|grep inet
+   36  docker pull jordan/icinga2
+   37  docker run -p 80:80 -h icinga2 -t jordan/icinga2:latest
+   38  docker ps 
+   39  reboot
+   40  docker ps
+   41  docker ps -a
+   42  exit
+   43  exit
+   44  docker
+   45  ls
+   46  mkdir devops
+   47  cd devops/
+   48  ls
+   49  mkdir docker
+   50  cd docker/
+   51  git
+   52  git pull https://gist.github.com/naumanbadar/aad6a25974b30adcb3c89b5f868627da
+   53  wget https://gist.github.com/naumanbadar/aad6a25974b30adcb3c89b5f868627da
+   54  ls
+   55  wget https://gist.githubusercontent.com/naumanbadar/aad6a25974b30adcb3c89b5f868627da/raw/b72129a8b3d5eff7597c4daf01267060dc1c30c7/docker-compose-cassandra-cluster.yml
+   56  ls
+   57  docker
+   58  poweroff
+   59  docker search apache
+   60  exit
+   61  docker run -it jenkins bash
+   62  docker run -p 8080:8080 -p 50000:50000 -v /home/jenkins:/var/jenkins_home jenkins
+   63  cd /home/jenkins/
+   64  ls
+   65  ls -la
+   66  cd ..
+   67  ls -l jenkins/
+   68  ls -l jenkins
+   69  ls -ld jenkins
+   70  chmod 777 jenkins/
+   71  docker run -p 8080:8080 -p 50000:50000 -v /home/jenkins:/var/jenkins_home jenkins
+   72  docker run -p 8080:8080 -p 50000:50000 -v /home/jenkins:/var/jenkins_home jenkins &
+   73  poweroff
+   74  docker ps
+   75  docker ps -a
+   76  df -h
+   77  ls
+   78  mv kubernetes kubernetes_bkp
+   79  git pull https://github.com/vurachaitanya/kubernetes
+   80  ls
+   81  git clone https://github.com/vurachaitanya/kubernetes
+   82  ls
+   83  cd kubernetes
+   84  ls
+   85  mkdir k8s_build_ubuntu_script
+   86  cd k8s_build_ubuntu_script/
+   87  ls
+   88  cat << EOF > /etc/apt/sources.list.d/kubernetes.list 
+   89  deb http://apt.kubernetes.io/ kubernetes-xenial main
+   90  EOF
+   91  cat /etc/apt/sources.list.d/kubernetes.list
+   92  rm /etc/apt/sources.list.d/kubernetes.list
+   93  ls
+   94  touch k8s_install.sh
+   95  vi k8s_install.sh 
+   96  uptime
+   97  cd ..
+   98  git commit .
+   99  git config 
+  100  git commit .
+  101  ls
+  102  ls -la
+  103  cd .git
+  104  ls
+  105  vi config 
+  106  cd ind
+  107  cat index 
+  108  ls
+  109  vi index 
+  110  cd ..
+  111  ls
+  112  git commit .
+  113  git config --global user.email "vurachaitanya"
+  114  git config --global user.name "vurachaitanya"
+  115  git config --global user.email "vurachaitanya@gmail.com"
+  116  git config --global user.name "vurachaitanya"
+  117  git commit .
+  118  git add .
+  119  git commit 
+  120  git commit all
+  121  cd 
+  122  ls
+  123  ssh-keygen 
+  124  cd .ssh
+  125  ls
+  126  cat id_rsa
+  127  git status
+  128  cd 
+  129  cd kubernetes
+  130  git status
+  131  git stash
+  132  git push 
+  133  ls
+  134  touch k8s_build_ubuntu_script/k8s_install.sh
+  135  mkdir k8s_build_ubuntu_script
+  136  touch k8s_build_ubuntu_script/k8s_install.sh
+  137  vi k8s_build_ubuntu_script/k8s_install.sh
+  138  git add .
+  139  git commit 
+  140  git commit .
+  141  git add -p
+  142  git status
+  143  git commit 
+  144  git add k8s_build_ubuntu_script/k8s_install.sh
+  145  git commit k8s_build_ubuntu_script/k8s_install.sh
+  146  git commit -m "k8s install script"
+  147  git push 
+  148  ls
+  149  vi k8s
+  150  cd k8s_build_ubuntu_script/
+  151  ls
+  152  vi k8s_install.sh 
+  153  chmod a+x k8s_install.sh 
+  154  ./k8s_install.sh 
+  155  vi k8s_install.sh 
+  156  ./k8s_install.sh 
+  157  git add .
+  158  git commit -m "updated script"
+  159  git push 
+  160  poweroff
+  161  docker ps
+  162  docker inspect 1ade9316b231|more
+  163  cd /var/lib/docker/volumes/802ef395fd223e51ca4a329925c1b
+  164  b501a137000aa677d71b84add8b86537767/_data
+  165  cd /var/lib/docker/volumes/802ef395fd223e51ca4a329925c1bb501a137000aa677d71b84add8b86537767/_data
+  166  ls
+  167  docker ps
+  168  cd 
+  169  docker ps 
+  170  docker run -it -v --volume-from admiring_hoover -name busybox1
+  171  docker run -it --volume-from admiring_hoover -name busybox1
+  172  docker run busybox -it --volume-from admiring_hoover 
+  173  docker run busybox --volume-from admiring_hoover 
+  174  docker run -it busybox --volume-from admiring_hoover 
+  175  docker run -it busybox --volume-from admiring_hoover
+  176  history |more
+  177  docker volume ls
+  178  docker ps
+  179  docker stop admiring_hoover
+  180  docker stop slave1
+  181  docker stop sad_yonath determined_hodgkin
+  182  docker ps 
+  183  clear
+  184  uptime
+  185  clear
+  186  docker volume ls
+  187  docker prune
+  188  exit
+  189  clear
+  190  docker inspect 
+  191  docker inspect backup
+  192  docker inspect logs
+  193  docker inspect ls
+  194  docker volume ls
+  195  docker inspect data
+  196  docker inspect logs
+  197  docker inspect backup
+  198  docker volume ls
+  199  docker ps
+  200  docker images
+  201  docker run -it -v /data:/myvol1 --name centos
+  202  docker run centos -it -v /data:/myvol1 --name centos
+  203  docker run centos -it -v /data:/myvol1 --name centosv bash
+  204  docker run centos -it -v /data:/myvol1 /bin/bash
+  205  docker run centos -d -v /data:/myvol1 /bin/bash
+  206  docker run centos:latest -v /data:/myvol1 /bin/bash
+  207  docker run centos:latest -v /data:/myvol1 
+  208  docker run centos:latest
+  209  docker ps
+  210  docker run centos -v /data:/myvol1
+  211  clear
+  212  docker run -it -v /data:/myvol centos
+  213  clear
+  214  cd /data
+  215  ls
+  216  docker run -it -v /myvol2 busybox
+  217  exit
+  218  docker ps
+  219  telnet 0 32768
+  220  clear
+  221  docker ps 
+  222  docker inspect 3c8efc0752fe
+  223  docker logs 3c8efc0752fe
+  224  docker logs -f 3c8efc0752fe
+  225  docker ps
+  226  docker exec -it 3c8efc0752fe /bin/bash
+  227  docker ps 
+  228  ls
+  229  mkdir data
+  230  docker run -it -v data:/myvol tomcat:7
+  231  clear
+  232  docker ps
+  233  docker run -it -v data:/myvol tomcat:7
+  234  clear
+  235  df -h
+  236  docker ps
+  237  docker ps -a
+  238  ls
+  239  cd da
+  240  cd data/
+  241  ls
+  242  docker run -d -v ~/data:/myvol tomcat:7
+  243  docker ps 
+  244  docker inspect 3f5ab72e0893|more
+  245  docker run -it -v /etc:/myvol tomcat:7
+  246  clear
+  247  docker run -d -v /etc:/myvol tomcat:7
+  248  docker ps
+  249  docker exec -it 68a4a4ee1135 /bin/bash
+  250  docker ps
+  251  docker run -it apache --volume-from 68a4a4ee1135 test bash docker
+  252  docker run -it apache --volume-from 68a4a4ee1135 test bash
+  253  docker run -it name test --volume-from 68a4a4ee1135 ubuntu bash 
+  254  docker run -it --volume-from 68a4a4ee1135 ubuntu bash 
+  255  docker run --volume-from 68a4a4ee1135 ubuntu bash
+  256  docker run -it name slave1 --volume-from 68a4a4ee1135 ubuntu bash
+  257  docker run -it ubuntu --volume-from 68a4a4ee1135  /bin/bash
+  258  docker ps
+  259  docker inspect 68a4a4ee1135|more
+  260  docker 
+  261  docker ps
+  262  docker run -it ubuntu --volume-from sad_yonath  /bin/bash
+  263  docker run -it -n test ubuntu --volume-from sad_yonath  /bin/bash
+  264  docker run -it -name test ubuntu --volume-from sad_yonath  /bin/bash
+  265  docker run -it --name test ubuntu --volume-from sad_yonath  /bin/bash
+  266  docker
+  267  clear
+  268  ls
+  269  cd 
+  270  ls
+  271  cd data
+  272  ls
+  273  mkdir backup logs
+  274  ls
+  275  docker run -it --name master -v backup:/backup -v logs:/logs ubuntu bash
+  276  history 
+  277  exit
+  278  clear
+  279  docker run -P nginx
+  280  docker ps 
+  281  docker run -p 80:80 nginx
+  282  docker ps
+  283  docker start 3c8efc0752fe
+  284  docker stop 3c8efc0752fe
+  285  docker start 3c8efc0752fe
+  286  docker stop 3c8efc0752fe
+  287  docker run -d -p 8080:8080 tomcat:7
+  288  docker ps 
+  289  docker inspect 931f5ae4c93e
+  290  docker inspect 931f5ae4c93e|grep -i port
+  291  docker ps 
+  292  docker stop 5f62dea23acf
+  293  docker ps 
+  294  telnet 0 8080
+  295  telnet 172.17.0.3:8080
+  296  telnet 172.17.0.3 8080
+  297  clear
+  298  docker ps
+  299  docker -it exec 84b50107068a
+  300  docker -it exec 84b50107068a /bin/bash
+  301  docker exec -it 84b50107068a /bin/bash
+  302  cd data
+  303  ls
+  304  touch a b c d
+  305  docker exec -it 84b50107068a /bin/bash
+  306  clear
+  307  cd data
+  308  cd 
+  309  ls
+  310  docker ps
+  311  docker exec -it 7894da1a490a /bin/bash
+  312  celar
+  313  clear
+  314  docker volume ls
+  315  docker volume inspect
+  316  docker volume inspect 1045b5446e9e2057e4b756b85ce82542630013a9e86d9c286c321c59234df40a
+  317  docker ps 
+  318  docker run -it f91edb081165 /bin/bash
+  319  docker ps 
+  320  docker exec -it f91edb081165 /bin/bash
+  321  cd data
+  322  ls
+  323  cat a 
+  324  ls -ld
+  325  clear
+  326  docker ps 
+  327  docker exec -it 7a05e1fd9fef /bin/bash
+  328  clear
+  329  docker ps
+  330  docker exec -it 9672c952ae79 /bin/bash
+  331  clear
+  332  docker inspect 9672c952ae79|more
+  333  clear
+  334  cd 
+  335  ls
+  336  cd d
+  337  cd data/
+  338  ls
+  339  cd backup/
+  340  ls
+  341  cd ../logs/
+  342  l
+  343  ls
+  344  clear
+  345  docker run -it --name slave1 --volumes-from master ubuntu bash
+  346  clear
+  347  cd 
+  348  docker system
+  349  docker system df
+  350  docker system events
+  351  docker system info
+  352  clear
+  353  docker network ls
+  354  docker inspect bridge
+  355  docker inspect host
+  356  docker ps a
+  357  docker ps 
+  358  docker network desconnect awesome_varahamihira
+  359  docker network desconnect bridge
+  360  docker network desconnect disconnect bridge
+  361  docker network desconnect disconnect --help
+  362  docker network disconnect bridge
+  363  docker network disconnect --help
+  364  docker network disconnect bridge awesome_varahamihira
+  365  docker network ls
+  366  docker network inspect bridge
+  367  docker inspect awesome_varahamihira
+  368  docker inspect awesome_varahamihira|grep net
+  369  clear
+  370  exit
+  371  docker ps 
+  372  docker images
+  373  docker run -it busybox
+  374  docker ps
+  375  docker images
+  376  docker ps -a
+  377  docker system df
+  378  docker system prune
+  379  docker networks
+  380  docker network
+  381  docker networkls
+  382  docker network ls
+  383  docker run -it busybox
+  384  clear
+  385  docker run -it centos:7 /bin/bash
+  386  docker ps
+  387  docker ps -a|head
+  388  docker run kickass_haibt --name chaitanya_git_curl
+  389  docker run d79e1bda8d68 --name chaitanya_git_curl
+  390  docker start d79e1bda8d68 --name chaitanya_git_curl
+  391  docker start d79e1bda8d68 --rename chaitanya_git_curl
+  392  docker
+  393  docker rename d79e1bda8d68 chaitanya_git_curl
+  394  docker images
+  395  docker ps -a
+  396  docker commit chaitanya_git_curl vurachaitanya:1
+  397  docker images
+  398  docker commit chaitanya_git_curl vurachaitanya
+  399  docker images
+  400  docker push chaitanya_git_curl/vurachaitanya:1
+  401  docker push chaitanya_git_curl vurachaitanya:1
+  402  docker push chaitanya_git_curl:1
+  403  docker push vurachaitnya/chaitanya_git_curl:1
+  404  docker push chaitanya_git_curl:1
+  405  docker push vurachaitanya@chaitanya_git_curl:1
+  406  docker push vurachaitanya:chaitanya_git_curl:1
+  407  docker login
+  408  docker images
+  409  docker push vurachaitanya:latest
+  410  docker login
+  411  docker login https://hub.docker.com/u/vurachaitanya
+  412  docker login https://hub.docker.com --username=vurachaitanya --email=vurachaitanya@gmail.com
+  413  docker login https://hub.docker.com --username=vurachaitanya --email=vurachaitanya@gmail.com --password
+  414  ls
+  415  ls -la
+  416  docker init
+  417  docker login
+  418  nslookup https://hub.docker.com/u/vurachaitanya/
+  419  nslookup hub.docker.com
+  420  docker login
+  421  ls
+  422  ls -la
+  423  find / -type d -name .docker
+  424  docker login
+  425  docker login localhost:8080
+  426  docker login https://hub.docker.com -u vurachaitanya -p Bindhu@143
+  427  docker login https://hub.docker.com/u/vurachaitanya:443 -u vurachaitanya -p Bindhu@143
+  428  docker login https://hub.docker.com/vurachaitanya:443 -u vurachaitanya -p Bindhu@143
+  429  doker login
+  430  docker login
+  431  clear
+  432  ls
+  433  mkdir docker_file
+  434  cd docker_file/
+  435  l
+  436  mkdir helloworld
+  437  cd helloworld/
+  438  vi Dockerfile
+  439  docker build .
+  440  docker ps 
+  441  docker images|head
+  442  docker ps -a|hea
+  443  docker images|more
+  444  cd ..
+  445  mkdir git
+  446  cd git
+  447  vi Dockerfile
+  448  docker build .
+  449  docker ps
+  450  docker images
+  451  vi Dockerfile 
+  452  docker build .
+  453  vi Dockerfile 
+  454  docker build .
+  455  apt-get install git
+  456  docker images
+  457  cat Dockerfile 
+  458  vi Dockerfile 
+  459  docker build .
+  460  vi Dockerfile 
+  461  docker build .
+  462  docker ps
+  463  docker image
+  464  docker images
+  465  docker exec -it cb3ac284bb28 /bin/bash
+  466  docker run -it cb3ac284bb28 /bin/bash
+  467  clear
+  468  ls
+  469  vi Dockerfile 
+  470  docker build .
+  471  vi Dockerfile 
+  472  clar
+  473  clear
+  474  docker images
+  475  vi /usr/lib/systemd/system/docker.service
+  476  cd /usr/lib/systemd/system/docker.service
+  477  ls
+  478  cd /usr/lib/systemd/system/
+  479  cd /usr/lib/systemd
+  480  ls
+  481  ls -ldR|grep docker
+  482  ls -lR|grep docker*
+  483  ls -lR|grep docker.*
+  484  cd book
+  485  cd boot
+  486  ls
+  487  cd efi
+  488  ls
+  489  cd ../..
+  490  ls
+  491  cd catalog/
+  492  ls
+  493  cd ..
+  494  ls
+  495  cd network/
+  496  ls
+  497  cd ..
+  498  cd user
+  499  ls
+  500  cd ..
+  501  ls
+  502  cd user-generators/
+  503  ls
+  504  clear
+  505  systemctl status docker
+  506  systemctl docker enable
+  507  systemctl enable docker
+  508  systemctl start docker
+  509  cd ..
+  510  ls
+  511  cd user
+  512  ls
+  513  cd ..
+  514  ls
+  515  cd user-generators/
+  516  ls
+  517  cd ..
+  518  ls
+  519  clear
+  520  systemctl disable docker 
+  521  cd /lib/systemd/systemd-sysv-install
+  522  ls -l /lib/systemd/systemd-sysv-install
+  523  systemctl enable docker 
+  524  cd ..
+  525  ls
+  526  cd ..
+  527  ls
+  528  find . -type f -name docker.service 2>>/dev/null
+  529  find / -type f -name docker.service 2>>/dev/null
+  530  cd /lib/systemd/system/
+  531  ls
+  532  vi docker.service 
+  533  docker login
+  534  docker images
+  535  docker push vurachaitanya:1
+  536  docker push vurachaitanya:latest
+  537  docker info
+  538  cd 
+  539  ls
+  540  cd docker_file/
+  541  ls
+  542  mkdir first_dockerfile
+  543  cd first_dockerfile/
+  544  vi Dockerfile
+  545  docker build -t fist_docker_file:1 .
+  546  docker images
+  547  docker push fist_docker_file:1
+  548  docker tag fist_docker_file vurachaitanya/fist_docker_file:1
+  549  docker images
+  550  docker tag fist_docker_file vurachaitanya/fist_docker_file
+  551  docker tag first_docker_file vurachaitanya/first_docker_file
+  552  docker build -t first_docker_file .
+  553  docker image
+  554  docker images
+  555  docker tag first_docker_file vurachaitanya/first_docker_file
+  556  docker images
+  557  docker push vurachaitanya/first_docker_file:1
+  558  docker push vurachaitanya/first_docker_file:latest
+  559  cat Dockerfile 
+  560  clear
+  561  cd ..
+  562  mkdir second_dockerfile
+  563  cd second_dockerfile/
+  564  vi Dockerfile
+  565  docker build -t vurachaitanya/second_dockerfile .
+  566  docker run -it vurachaitanya/second_dockerfile
+  567  docker push -t vurachaitanya/second_dockerfile:1
+  568  docker push  vurachaitanya/second_dockerfile
+  569  cat Dockerfile 
+  570  vi Dockerfile 
+  571  docker build .
+  572  docker run -it 66dd1173fc34
+  573  vi Dockerfile 
+  574  docker build .
+  575  clear
+  576  ls
+  577  cat Dockerfile 
+  578  docker build .
+  579  docker images
+  580  docker run -it 0e002cdd0023
+  581  vi Dockerfile 
+  582  docker build .
+  583  docker images
+  584  docker run -it 144eff703eb5
+  585  vi Dockerfile 
+  586  docker build .
+  587  docker images
+  588  docker run -it 144eff703eb5
+  589  docker run -it 66dd1173fc34
+  590  clear
+  591  cd ..
+  592  mkdir nginx_proxy_server
+  593  cd nginx_proxy_server/
+  594  vi Dockerfile
+  595  docker build .
+  596  docker images
+  597  docker exec -it dbceecc8226b bin
+  598  docker exec -it dbceecc8226b bash
+  599  docker exec dbceecc8226b -it  bash
+  600  docker -it exec dbceecc8226b /bin/bash
+  601  docker run -it dbceecc8226b /bin/bash
+  602  docker version
+  603  ls -l /etc/docker/daemon.json.
+  604  cd /etc/doc
+  605  cd /etc/docker/
+  606  ls
+  607  cat key.json 
+  608  vi daemon.json
+  609  cat /etc/resolv.conf 
+  610  nslookup gmail.com
+  611  reboot
+  612  clear
+  613  cd docker_file/'
+  614  cd docker_file/
+  615  '
+  616  cd d
+  617  cd docker_file/
+  618  ls
+  619  cd nginx_proxy_server/
+  620  docker build .
+  621  cat /etc/resolv.conf 
+  622  vi /etc/resolv.conf 
+  623  cp -p /etc/resolv.conf /etc/resolv.conf.bkp
+  624  reboot
+  625  clear
+  626  docke rps
+  627  docker ps
+  628  docker ps -a
+  629  clear
+  630  cat /etc/resolv.conf
+  631  cp /etc/resolv.conf.bkp /etc/resolv.conf
+  632  systemctl reload docker
+  633  cd docker_file/
+  634  cd nginx_proxy_server/
+  635  docker build .
+  636  cd /etc/docker/
+  637  ls
+  638  cat daemon.json 
+  639  vi daemon.json 
+  640  cat /etc/resolv.conf
+  641  nslookup gmail.com
+  642  vi /etc/docker/daemon.json 
+  643  systemctl reload docker
+  644  systemctl status docker
+  645  date
+  646  systemctl restart docker
+  647  systemctl status docker
+  648  clear
+  649  cd /root/docker_file/nginx_proxy_server/
+  650  ls
+  651  docker build .
+  652  docker images
+  653  docker run -it dbceecc8226b bash
+  654  exit
+  655  docker rmi dbceecc8226b
+  656  docker ps 
+  657  docker ps -a|grep dbceecc8226b
+  658  clear
+  659  cd /root/docker_file/nginx_proxy_server/
+  660  vi Dockerfile 
+  661  docker build . 
+  662  vi Dockerfile 
+  663  docker build . 
+  664  vi Dockerfile 
+  665  docker build . 
+  666  docker images
+  667  docker -t vurachaitanya/nginx 4cf2274bc558
+  668  docker -t 4cf2274bc558  vurachaitanya/nginx 
+  669  docker tag 4cf2274bc558  vurachaitanya/nginx 
+  670  docker images
+  671  docker run -it vurachaitanya/nginx
+  672  docker run -it vurachaitanya/nginx &
+  673  docker ps
+  674  docker run -d vurachaitanya/nginx &
+  675  docker ps
+  676  docker inspect 3806e8431370
+  677  telnet 172.17.0.2 80
+  678  docker run -d vurachaitanya/nginx -p 80:80
+  679  docker run -d vurachaitanya/nginx -P 80:80
+  680  docker ps
+  681  telnet 172.17.0.2 80
+  682  links 172.17.0.2
+  683  apt-get install links
+  684  links 172.17.0.2
+  685  clear
+  686  ls
+  687  docker ps
+  688  docker push vurachaitanya/nginx 
+  689  cd ..
+  690  ls
+  691  git init 
+  692  git login
+  693  git add .
+  694  git commit -m "docker file examples"
+  695  docker push 
+  696  docker push vurachaitanya
+  697  git push origin master
+  698  git push 
+  699  git remote add vurachaitanya github.com
+  700  git push vurachaitanya
+  701  git remote add origin vurachaitanya@github.com/vurachaitanya/Docker
+  702  git push -u origin master
+  703  ls
+  704  git push -u vurachaitanya https://github.com/vurachaitanya/Docker
+  705  git remote
+  706  git remote vurachaitanya
+  707  git remote Docker https://github.com/vurachaitanya/Docker
+  708  cd ..
+  709  mv docker_file Docker
+  710  ls
+  711  git init Docker
+  712  git add Docker
+  713  git commit -m "Dockerfile"
+  714  cd ..
+  715  ls
+  716  cd 
+  717  ls
+  718  git init Docker
+  719  git add Docker
+  720  git commit -m "docker files"
+  721  cd Docker/
+  722  ls
+  723  git init .
+  724  git add .
+  725  git commit -m "docker files examples"
+  726  ls
+  727  git push 
+  728  git push origin master
+  729  git remote 
+  730  git remote add vurachaitanya https://github.com/vurachaitanya/Docker
+  731  git remote add  https://github.com/vurachaitanya/Docker
+  732  git remote add Docker https://github.com/vurachaitanya/Docker
+  733  git push -u Docker https://github.com/vurachaitanya/Docker
+  734  git push 
+  735  clear
+  736  ls
+  737  cd git
+  738  ls
+  739  cd ..
+  740  ls
+  741  ls -la
+  742  cd ..
+  743  mv Docker
+  744  mv Docker Docker.bkp
+  745  cd Docker.bkp/
+  746  ls
+  747  ls -la
+  748  rm .git
+  749  rm -rf git
+  750  rm -rf .git
+  751  ls
+  752  cd ..
+  753  ls
+  754  git clone https://github.com/vurachaitanya/Docker.git
+  755  ls
+  756  cd Docker
+  757  ls
+  758  mv ../Docker.bkp/* .
+  759  git add .
+  760  git commit -m "Docker files"
+  761  git push master
+  762  git status
+  763  git push
+  764  ls
+  765  cat Docker\ Commands 
+  766  clear
+  767  history 
+  768  history > Docker_command_history
